@@ -2,11 +2,13 @@
 // Project: http://nodejs.org/
 // Definitions by: Microsoft TypeScript <http://typescriptlang.org>, DefinitelyTyped <https://github.com/DefinitelyTyped/DefinitelyTyped>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
+
 /************************************************
 *                                               *
 *               Node.js v7.x API                *
 *                                               *
 ************************************************/
+
 // This needs to be global to avoid TS2403 in case lib.dom.d.ts is present in the same build
 interface Console {
     Console: NodeJS.ConsoleConstructor;
