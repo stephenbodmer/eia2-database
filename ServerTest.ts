@@ -13,6 +13,7 @@ namespace ServerTest {
     function handleListen(): void {
         console.log("Server listening");
     }
+    
 
     function handleRequest(_request: Http.IncomingMessage, _response: Http.ServerResponse): void {
         console.log("Ich höre Stimmen!!");
