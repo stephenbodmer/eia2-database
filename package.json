@@ -2,7 +2,7 @@
 	"name" : "ServerTest",
 	"version" : "0.0.1",
 	"description" : "Testing node and server",
-	"author" : "Manfred",
+	"author" : "Jirka Dell'Oro-Friedl'",
 	"main" : "ServerTest.js",
 	"scripts" : {
 		"start" : "node ServerTest.js"
@@ -12,3 +12,4 @@
 	},
 	"dependencies" : {
 	}
+}
