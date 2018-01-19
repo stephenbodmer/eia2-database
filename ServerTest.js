@@ -1,17 +1,18 @@
 "use strict";
+exports.__esModule = true;
 // Node-Http-Modul importieren
-const Http = require("http");
+var Http = require("http");
 // Node-Url-Modul importieren
-const Url = require("url");
+var Url = require("url");
 var ServerTest;
 (function (ServerTest) {
     // Port vom Process-Objekt erfragen 
-    let port = process.env.PORT;
+    var port = process.env.PORT;
     // Port nicht definiert -> lokale Maschine, Port selbst definieren
     if (port == undefined)
         port = 8100;
     // Server-Objekt kreieren
-    let server = Http.createServer();
+    var server = Http.createServer();
     // Event-Handler installieren
     server.addListener("listening", handleListen);
     server.addListener("request", handleRequest);
@@ -35,9 +36,9 @@ var ServerTest;
         _response.write("Url: " + _request.url + "<br>");
         _response.write("Headers: " + _request.headers + "<br>");
         // ?
-        let query = Url.parse(_request.url, true).query;
+        var query = Url.parse(_request.url, true).query;
         // ?
-        for (let key in query)
+        for (var key in query)
             _response.write(key + ": " + query[key]);
         // Antwort abschließen und abschicken
         _response.end();
