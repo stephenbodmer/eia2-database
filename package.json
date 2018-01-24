@@ -1,8 +1,8 @@
 {
-	"name": "ServerTest",
+	"name": "DatabaseConnection",
 	"version": "0.0.1",
-	"description": "Testing node and server",
-	"author": "Stephen Bodmer",
+	"description": "Testing node, server and database",
+	"author": "Jirka Dell'Oro-Friedl'",
 	"main": "Server.js",
 	"scripts": {
 		"start": "node Server.js"
