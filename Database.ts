@@ -5,15 +5,15 @@
 import * as Mongo from "mongodb";
 console.log("Database starting");
 
-let databaseURL: string = "mongodb://localhost:27017";
-let databaseName: string = "Test";
+let databaseURL: string;
+let databaseName: string;
 let db: Mongo.Db;
 let students: Mongo.Collection;
 
 if (process.env.NODE_ENV == "production") {
     //    databaseURL = "mongodb://username:password@hostname:port/database";
-    databaseURL = "mongodb://testuser:testpassword@ds129532.mlab.com:29532/eia2";
-    databaseName = "eia2";
+    databaseURL = "mongodb://<hallo>:<hallo>@ds213688.mlab.com:13688/eia2-database";
+    databaseName = "eia2_a12";
 }
 
 Mongo.MongoClient.connect(databaseURL, handleConnect);

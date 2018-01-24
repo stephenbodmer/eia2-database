@@ -1,18 +1,19 @@
 "use strict";
+exports.__esModule = true;
 /**
  * Simple database insertion and query for MongoDB
  * @author: Jirka Dell'Oro-Friedl
  */
-const Mongo = require("mongodb");
+var Mongo = require("mongodb");
 console.log("Database starting");
-let databaseURL = "mongodb://localhost:27017";
-let databaseName = "Test";
-let db;
-let students;
+var databaseURL;
+var databaseName;
+var db;
+var students;
 if (process.env.NODE_ENV == "production") {
     //    databaseURL = "mongodb://username:password@hostname:port/database";
-    databaseURL = "mongodb://testuser:testpassword@ds129532.mlab.com:29532/eia2";
-    databaseName = "eia2";
+    databaseURL = "mongodb://<hallo>:<hallo>@ds213688.mlab.com:13688/eia2-database";
+    databaseName = "eia2_a12";
 }
 Mongo.MongoClient.connect(databaseURL, handleConnect);
 function handleConnect(_e, _db) {
